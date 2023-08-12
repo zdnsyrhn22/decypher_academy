@@ -1,0 +1,125 @@
+/* hero */
+.hero-about{
+    background-image: url("../images/pattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-about .title-section{
+    padding: 100px 0;
+}
+
+.hero-about .title-section h1{
+    color: #f4f4f4;
+}
+
+.hero-about .title-section span{
+    color: rgb(173, 193, 230);
+}
+
+.hero-about .title-section p{
+    color: #f4f4f4;
+}
+
+.hero-about .content-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .hero-about .content-section{
+        display: none;
+    }
+}
+
+.hero-about .content-section img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* our story */
+.our-story{
+    margin: 100px 0;
+}
+
+.our-story .title-section{
+    flex-direction: column;
+}
+
+.our-story .title-section .title{
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .our-story .title-section .title{
+        width: 100%;
+    }
+}
+
+/* visi-misi */
+.visi-misi{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    gap: 25px;
+}
+
+.visi-misi .card{
+    gap: 10px;
+}
+
+.visi-misi .card p{
+    margin: 0;
+}
+
+@media (max-width:1024px) {
+    .visi-misi .content-section{
+        flex-wrap: wrap;
+    }
+    .visi-misi .card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .visi-misi .card{
+        width: 100%;
+    }
+}
+
+
+/* ourteam */
+.our-team{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 100px 0;
+}
+
+.our-team .card{
+    width: 100%;
+    gap: 10px;
+}
+
+.our-team .card .card-body{
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.our-team .card .card-body p{
+    padding: 0;
+    margin: 0;
+}
+
+.our-team .card .card-image{
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    object-position: top center;
+}

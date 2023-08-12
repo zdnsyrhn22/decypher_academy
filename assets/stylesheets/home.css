@@ -1,0 +1,317 @@
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  margin: 25px 0;
+}
+
+.hero .hero-img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  flex: 1;
+}
+
+.hero .hero-button {
+  display: flex;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero .hero-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .hero-button {
+    justify-content: center;
+  }
+}
+
+/* companies */
+.companies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  gap: 25px;
+  margin: 25px 0 100px 0;
+}
+
+.companies .icon-companies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 1024px) {
+  .companies {
+    display: none;
+  }
+}
+
+/* our-services */
+.our-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  gap: 25px;
+  margin: 100px 0;
+}
+
+.our-services .content-section .card {
+  flex: 15%;
+}
+
+@media (max-width: 768px) {
+  .our-services .content-section .card {
+    flex: 35%;
+  }
+}
+
+/* benefits */
+.benefit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 100px 0;
+  gap: 20px;
+}
+
+.benefit .benefit-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.benefit .benefit-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .benefit {
+    flex-wrap: wrap;
+  }
+
+  .benefit .benefit-img {
+    width: 100%;
+  }
+}
+
+/* roadmap */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 100px 0;
+}
+
+.roadmap .content-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.roadmap .card {
+    z-index: 99;
+  flex: 15%;
+}
+
+.roadmap .card:hover {
+  background-image: url("../images/pattern.png");
+  box-shadow: 10px 10px 254px 19px rgba(36, 72, 249, 0.205);
+  -webkit-box-shadow: 10px 10px 254px 19px rgba(36, 72, 249, 0.205);
+  -moz-box-shadow: 10px 10px 254px 19px rgba(36, 72, 249, 0.205);
+  z-index: 0;
+  transition: 0.3s;
+}
+
+.roadmap .card:hover a {
+  color: white;
+}
+
+.roadmap .card:hover p {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .roadmap .card {
+    flex: 33%;
+  }
+}
+@media (max-width: 768px) {
+  .roadmap .card {
+    flex: 100%;
+  }
+}
+
+/* populer course */
+.pop-course {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 100px 0;
+}
+
+.pop-course .title-section a:hover{
+    transition: 0.3s;
+    color: gray;
+}
+
+.pop-course .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.pop-course .card .card-title{
+  line-height: 32px;
+}
+
+.pop-course .card-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.pop-course-link{
+  color: #2447f9;
+}
+
+@media (max-width: 768px) {
+    .pop-course .card{
+        flex-wrap: wrap;
+    }
+    .pop-course .card-image {
+      width: 100%;
+      flex: 100%;
+    }
+  }
+
+  /* email */
+  .email {
+    margin: 100px 0;
+  }
+  
+  .card-email {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  
+    background-image: url("../images/pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 90%);
+  }
+  
+  .card-email-body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .card-email h2 {
+    color: white;
+  }
+  
+  .card-email p {
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .card-email-body form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .form-email {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 100px;
+  }
+  
+  .input-email {
+    width: 100%;
+    font-size: 15px;
+    margin: 0 10px;
+    border: none;
+    font-weight: 500;
+    color: #5e6687;
+  }
+  
+  .input-email:hover {
+    border: none;
+  }
+  
+  .input-email:focus {
+    outline: none !important;
+  }
+  
+  .btn-email {
+    background-color: #2447f9;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    border-radius: 30px;
+    max-width: 150px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .btn-email:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 0px 3.7px rgba(36, 71, 249, 0.3);
+    -webkit-box-shadow: 0px 0px 0px 3.7px rgba(36, 71, 249, 0.3);
+    -moz-box-shadow: 0px 0px 0px 3.7px rgba(36, 71, 249, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .card-email {
+      clip-path: none;
+    }
+    .form-email {
+      width: 80%;
+    }
+  }

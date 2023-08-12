@@ -1,0 +1,39 @@
+.hero-isa{
+    margin: 100px 0;
+}
+
+.hero-isa .hero-img{
+    width: 50%;
+}
+
+.isa-benefit{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    gap: 25px;
+}
+
+.isa-benefit .card{
+    gap: 5px;
+}
+
+.isa-benefit .card p {
+    margin: 0;
+}
+
+.isa-terms{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    gap: 25px;
+}
+
+.isa-terms .content-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.isa-terms .content-section .card{
+    flex: 25%;
+}
